@@ -1,6 +1,10 @@
 # Lightroom Classic 風格檔一鍵備份／還原
 
+<p align="center"><img src="docs/icon.png" width="128" alt="App icon"></p>
+
 重裝 Lightroom Classic 前後，一鍵備份與還原你的**風格檔**（第三方 film packs、個人 presets/profiles、最愛與隱藏群組）。LR app 本身的設定不在範圍內（可重裝後重設）。
+
+<p align="center"><img src="docs/screenshot.png" width="600" alt="App 畫面（深色 Lightroom 風 UI）"></p>
 
 ## 使用
 
