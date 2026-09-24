@@ -3,9 +3,10 @@ import SwiftUI
 @main
 struct LRPresetsBackupApp: App {
     var body: some Scene {
-        WindowGroup("LR 風格檔備份") {
+        WindowGroup("Mac 備份") {
             ContentView()
         }
-        .windowResizability(.contentSize)
+        .defaultSize(width: 640, height: 900)
+        .windowResizability(.contentMinSize)
     }
 }

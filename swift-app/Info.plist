@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleName</key>
-    <string>LR 風格檔備份</string>
+    <string>Mac 備份</string>
     <key>CFBundleDisplayName</key>
-    <string>LR 風格檔備份</string>
+    <string>Mac 備份</string>
     <key>CFBundleIdentifier</key>
-    <string>com.gary.lrpresetsbackup</string>
+    <string>com.gary.macbackup</string>
     <key>CFBundleExecutable</key>
     <string>LRPresetsBackup</string>
     <key>CFBundleIconFile</key>

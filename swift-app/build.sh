@@ -1,19 +1,19 @@
 #!/bin/bash
 #
 # 編譯 SwiftUI app 並打包成可雙擊的 .app（不需 Xcode，只需 Command Line Tools）。
-# 產出：../LR 風格檔備份.app（工具資料夾根目錄，方便雙擊）。
+# 產出：../Mac 備份.app（工具資料夾根目錄，方便雙擊）。
 
 set -euo pipefail
 
 SRC_DIR="$(cd "$(dirname "$0")" && pwd)"
 OUT_DIR="$(cd "$SRC_DIR/.." && pwd)"
-APP_NAME="LR 風格檔備份"
+APP_NAME="Mac 備份"
 BIN_NAME="LRPresetsBackup"
 APP="$OUT_DIR/$APP_NAME.app"
 BUILD="$SRC_DIR/.build"
 
 echo "編譯中…"
-rm -rf "$APP" "$BUILD"
+rm -rf "$APP" "$BUILD" "$OUT_DIR/LR 風格檔備份.app" "$OUT_DIR/Mac 一條龍備份.app"  # 順帶清掉改名前的舊 .app
 mkdir -p "$BUILD"
 swiftc -parse-as-library -O \
   "$SRC_DIR"/Sources/LRPresetsBackup/*.swift \
