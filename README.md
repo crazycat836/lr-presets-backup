@@ -16,7 +16,7 @@
 
 > 原始碼在 `swift-app/Sources/`，重新編譯（只需 Command Line Tools，不需 Xcode）：`swift-app/build.sh`
 >
-> 註：本機只有 CLT 沒有 Xcode，`@State` 因缺 SwiftUIMacros plugin 不可用，狀態集中在 `AppModel`（`@StateObject`/`@Published`）。
+> 註：狀態集中在 `AppModel`（`@StateObject`/`@Published`）。本機已裝 Xcode 27，`@State` 可以正常編譯（2026-10-13 用 `swiftc` 實測）；只裝 Command Line Tools 的機器可能缺 SwiftUIMacros plugin，`@State` 會編譯失敗。
 
 ## 備份範圍
 
